@@ -1,0 +1,26 @@
+{
+  "trace_id": "f08_wrong_number",
+  "goal": "What's the weather in Oslo?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "hallucination": 0.522
+  },
+  "findings": [
+    {
+      "mode": "hallucination",
+      "step_ids": [
+        2
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Final answer states value(s) [18.0] not supported by the goal or any tool output."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "hallucination"
+  ]
+}

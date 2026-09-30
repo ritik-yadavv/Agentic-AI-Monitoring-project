@@ -1,0 +1,26 @@
+{
+  "trace_id": "f07_nonsense_arg",
+  "goal": "What is 2+2?",
+  "score": 79,
+  "status": "WARN",
+  "mode_risk": {
+    "tool_misuse": 0.21
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "medium",
+      "confidence": 0.84,
+      "message": "Malformed call to 'calculator': expression 'two plus two' is not a valid arithmetic expression."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "trace_id": "f06_unknown_tool",
+  "goal": "Weather in Lima?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "tool_misuse": 0.523
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Call to unknown tool 'weather_api' (not in the tool registry)."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

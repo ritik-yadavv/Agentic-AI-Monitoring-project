@@ -1,0 +1,28 @@
+{
+  "trace_id": "testgenerated_053_goal_drift-recover",
+  "goal": "How many times larger is the population of Brazil than that of Germany?",
+  "score": 50,
+  "status": "FAIL",
+  "mode_risk": {
+    "goal_drift": 0.495
+  },
+  "findings": [
+    {
+      "mode": "goal_drift",
+      "step_ids": [
+        2,
+        3,
+        4
+      ],
+      "severity": "high",
+      "confidence": 0.9,
+      "message": "3 consecutive actions unrelated to the goal (search)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "goal_drift"
+  ]
+}

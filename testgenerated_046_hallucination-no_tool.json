@@ -1,0 +1,26 @@
+{
+  "trace_id": "testgenerated_046_hallucination-no_tool",
+  "goal": "Which city is hotter right now, Vienna or Lima?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "hallucination": 0.522
+  },
+  "findings": [
+    {
+      "mode": "hallucination",
+      "step_ids": [
+        1
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Final answer states value(s) [27.0, 12.0] not supported by the goal or any tool output."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "hallucination"
+  ]
+}

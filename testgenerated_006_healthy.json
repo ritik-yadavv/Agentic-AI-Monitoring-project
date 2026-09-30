@@ -1,0 +1,12 @@
+{
+  "trace_id": "testgenerated_006_healthy",
+  "goal": "How is the weather in Paris right now?",
+  "score": 100,
+  "status": "PASS",
+  "mode_risk": {},
+  "findings": [],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": []
+}

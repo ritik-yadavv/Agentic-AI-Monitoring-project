@@ -1,0 +1,36 @@
+{
+  "trace_id": "testgenerated_050_goal_drift-",
+  "goal": "How is the weather in Delhi right now?",
+  "score": 80,
+  "status": "WARN",
+  "mode_risk": {
+    "goal_drift": 0.2
+  },
+  "findings": [
+    {
+      "mode": "goal_drift",
+      "step_ids": [
+        2,
+        3
+      ],
+      "severity": "medium",
+      "confidence": 0.8,
+      "message": "2 consecutive actions unrelated to the goal (search)."
+    },
+    {
+      "mode": "goal_drift",
+      "step_ids": [
+        4
+      ],
+      "severity": "medium",
+      "confidence": 0.65,
+      "message": "Final answer does not address the stated goal."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "goal_drift"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "trace_id": "testgenerated_000_healthy",
+  "goal": "What's the weather in Nairobi?",
+  "score": 100,
+  "status": "PASS",
+  "mode_risk": {},
+  "findings": [],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": []
+}

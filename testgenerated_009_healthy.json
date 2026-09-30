@@ -1,0 +1,12 @@
+{
+  "trace_id": "testgenerated_009_healthy",
+  "goal": "What is the capital of Spain?",
+  "score": 100,
+  "status": "PASS",
+  "mode_risk": {},
+  "findings": [],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": []
+}

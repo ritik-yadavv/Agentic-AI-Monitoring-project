@@ -1,0 +1,12 @@
+{
+  "trace_id": "testgenerated_010_healthy",
+  "goal": "Which city is hotter right now, Madrid or Lima?",
+  "score": 100,
+  "status": "PASS",
+  "mode_risk": {},
+  "findings": [],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": []
+}

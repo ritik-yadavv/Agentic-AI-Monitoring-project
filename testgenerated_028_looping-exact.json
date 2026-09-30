@@ -1,0 +1,28 @@
+{
+  "trace_id": "testgenerated_028_looping-exact",
+  "goal": "What's the weather in Hanoi?",
+  "score": 53,
+  "status": "FAIL",
+  "mode_risk": {
+    "looping": 0.468
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        1,
+        2,
+        3
+      ],
+      "severity": "high",
+      "confidence": 0.85,
+      "message": "Tool 'weather' was called 3 times in a row with the same arguments and an unchanged observation (no progress)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "looping"
+  ]
+}

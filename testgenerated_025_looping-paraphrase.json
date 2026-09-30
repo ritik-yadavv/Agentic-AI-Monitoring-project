@@ -1,0 +1,30 @@
+{
+  "trace_id": "testgenerated_025_looping-paraphrase",
+  "goal": "How many times larger is the population of Ecuador than that of Austria?",
+  "score": 50,
+  "status": "FAIL",
+  "mode_risk": {
+    "looping": 0.5
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "severity": "high",
+      "confidence": 0.91,
+      "message": "Tool 'search' was called 5 times in a row with the same arguments and an unchanged observation (no progress)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "looping"
+  ]
+}

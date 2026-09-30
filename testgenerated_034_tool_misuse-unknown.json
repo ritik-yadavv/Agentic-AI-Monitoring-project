@@ -1,0 +1,26 @@
+{
+  "trace_id": "testgenerated_034_tool_misuse-unknown",
+  "goal": "What are the total sales in /workspace/data/sales.csv?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "tool_misuse": 0.523
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Call to unknown tool 'open_file' (not in the tool registry)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

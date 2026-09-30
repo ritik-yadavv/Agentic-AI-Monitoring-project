@@ -1,0 +1,39 @@
+{
+  "trace_id": "f21_loop_and_halluc",
+  "goal": "What's the weather in Lima?",
+  "score": 25,
+  "status": "FAIL",
+  "mode_risk": {
+    "looping": 0.468,
+    "hallucination": 0.522
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        1,
+        2,
+        3
+      ],
+      "severity": "high",
+      "confidence": 0.85,
+      "message": "Tool 'weather' was called 3 times in a row with the same arguments and an unchanged observation (no progress)."
+    },
+    {
+      "mode": "hallucination",
+      "step_ids": [
+        4
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Final answer states value(s) [27.0] not supported by the goal or any tool output."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "looping",
+    "hallucination"
+  ]
+}

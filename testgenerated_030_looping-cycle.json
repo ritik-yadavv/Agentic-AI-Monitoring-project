@@ -1,0 +1,31 @@
+{
+  "trace_id": "testgenerated_030_looping-cycle",
+  "goal": "How many times larger is the population of Nigeria than that of Ecuador?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "looping": 0.517
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "severity": "high",
+      "confidence": 0.94,
+      "message": "Tool 'search' was called 6 times in a row with the same arguments and an unchanged observation (no progress)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "looping"
+  ]
+}

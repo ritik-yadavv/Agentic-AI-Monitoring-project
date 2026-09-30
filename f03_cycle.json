@@ -1,0 +1,31 @@
+{
+  "trace_id": "f03_cycle",
+  "goal": "Weather in Paris?",
+  "score": 49,
+  "status": "FAIL",
+  "mode_risk": {
+    "looping": 0.506
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "severity": "high",
+      "confidence": 0.92,
+      "message": "The agent cycles through 2 distinct calls (search, weather) 3 times without any change in observations."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "looping"
+  ]
+}

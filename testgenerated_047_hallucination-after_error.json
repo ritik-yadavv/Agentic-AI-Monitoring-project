@@ -1,0 +1,26 @@
+{
+  "trace_id": "testgenerated_047_hallucination-after_error",
+  "goal": "What is the capital of Australia?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "hallucination": 0.522
+  },
+  "findings": [
+    {
+      "mode": "hallucination",
+      "step_ids": [
+        3
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Final answer states value(s) [34.0] not supported by the goal or any tool output."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "hallucination"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "trace_id": "testgenerated_039_tool_misuse-nonsense",
+  "goal": "What is the capital of Nigeria?",
+  "score": 79,
+  "status": "WARN",
+  "mode_risk": {
+    "tool_misuse": 0.21
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "medium",
+      "confidence": 0.84,
+      "message": "Malformed call to 'search': query '' is empty or a placeholder."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

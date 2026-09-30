@@ -1,0 +1,26 @@
+{
+  "trace_id": "f09_wrong_entity",
+  "goal": "What is the capital of Peru?",
+  "score": 81,
+  "status": "WARN",
+  "mode_risk": {
+    "hallucination": 0.188
+  },
+  "findings": [
+    {
+      "mode": "hallucination",
+      "step_ids": [
+        2
+      ],
+      "severity": "medium",
+      "confidence": 0.75,
+      "message": "Final answer names ['Cusco'] which appear nowhere in the evidence."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "hallucination"
+  ]
+}

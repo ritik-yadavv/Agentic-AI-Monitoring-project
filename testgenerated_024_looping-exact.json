@@ -1,0 +1,29 @@
+{
+  "trace_id": "testgenerated_024_looping-exact",
+  "goal": "What is the capital of Japan?",
+  "score": 52,
+  "status": "FAIL",
+  "mode_risk": {
+    "looping": 0.484
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "severity": "high",
+      "confidence": 0.88,
+      "message": "Tool 'search' was called 4 times in a row with the same arguments and an unchanged observation (no progress)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "looping"
+  ]
+}

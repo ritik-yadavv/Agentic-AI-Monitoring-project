@@ -1,0 +1,46 @@
+{
+  "trace_id": "testgenerated_027_looping-runaway",
+  "goal": "What is the capital of Brazil?",
+  "score": 46,
+  "status": "FAIL",
+  "mode_risk": {
+    "looping": 0.544
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "severity": "high",
+      "confidence": 0.99,
+      "message": "Tool 'search' was called 12 times in a row with the same arguments and an unchanged observation (no progress)."
+    },
+    {
+      "mode": "looping",
+      "step_ids": [
+        12
+      ],
+      "severity": "medium",
+      "confidence": 0.7,
+      "message": "Step budget (12) exhausted without a final answer."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "looping"
+  ]
+}

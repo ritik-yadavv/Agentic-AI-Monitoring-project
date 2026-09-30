@@ -1,0 +1,26 @@
+{
+  "trace_id": "f04_missing_arg",
+  "goal": "Weather in Lima?",
+  "score": 46,
+  "status": "FAIL",
+  "mode_risk": {
+    "tool_misuse": 0.539
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "high",
+      "confidence": 0.98,
+      "message": "Malformed call to 'weather': missing required: city."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

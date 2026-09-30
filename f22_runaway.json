@@ -1,0 +1,26 @@
+{
+  "trace_id": "f22_runaway",
+  "goal": "Find the population of Atlantis",
+  "score": 82,
+  "status": "WARN",
+  "mode_risk": {
+    "looping": 0.175
+  },
+  "findings": [
+    {
+      "mode": "looping",
+      "step_ids": [
+        12
+      ],
+      "severity": "medium",
+      "confidence": 0.7,
+      "message": "Step budget (12) exhausted without a final answer."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "hard",
+  "labels": [
+    "looping"
+  ]
+}

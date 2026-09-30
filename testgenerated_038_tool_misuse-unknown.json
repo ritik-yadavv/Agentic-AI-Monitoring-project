@@ -1,0 +1,26 @@
+{
+  "trace_id": "testgenerated_038_tool_misuse-unknown",
+  "goal": "How many times larger is the population of Brazil than that of Ecuador?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "tool_misuse": 0.523
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Call to unknown tool 'web_search' (not in the tool registry)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

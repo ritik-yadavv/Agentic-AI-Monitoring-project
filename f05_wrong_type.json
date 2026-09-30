@@ -1,0 +1,26 @@
+{
+  "trace_id": "f05_wrong_type",
+  "goal": "Weather in Lima?",
+  "score": 47,
+  "status": "FAIL",
+  "mode_risk": {
+    "tool_misuse": 0.533
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "high",
+      "confidence": 0.97,
+      "message": "Malformed call to 'weather': wrong type: city (expected string)."
+    }
+  ],
+  "split": "test",
+  "source": "handcrafted",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

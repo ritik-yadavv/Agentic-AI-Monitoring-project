@@ -1,0 +1,26 @@
+{
+  "trace_id": "testgenerated_037_tool_misuse-type",
+  "goal": "What are the total sales in /workspace/data/sales.csv?",
+  "score": 47,
+  "status": "FAIL",
+  "mode_risk": {
+    "tool_misuse": 0.533
+  },
+  "findings": [
+    {
+      "mode": "tool_misuse",
+      "step_ids": [
+        1
+      ],
+      "severity": "high",
+      "confidence": 0.97,
+      "message": "Malformed call to 'read_file': wrong type: path (expected string)."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "tool_misuse"
+  ]
+}

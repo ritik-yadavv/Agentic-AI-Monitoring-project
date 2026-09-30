@@ -1,0 +1,26 @@
+{
+  "trace_id": "testgenerated_044_hallucination-number",
+  "goal": "How many times larger is the population of India than that of Nigeria?",
+  "score": 48,
+  "status": "FAIL",
+  "mode_risk": {
+    "hallucination": 0.522
+  },
+  "findings": [
+    {
+      "mode": "hallucination",
+      "step_ids": [
+        4
+      ],
+      "severity": "high",
+      "confidence": 0.95,
+      "message": "Final answer states value(s) [12.4] not supported by the goal or any tool output."
+    }
+  ],
+  "split": "test",
+  "source": "generated",
+  "difficulty": "normal",
+  "labels": [
+    "hallucination"
+  ]
+}
