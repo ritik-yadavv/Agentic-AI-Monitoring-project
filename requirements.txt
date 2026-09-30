@@ -1,0 +1,2 @@
+# No third-party runtime dependencies (standard library only). Python 3.10+.
+# Optional: pytest (the tests also run under plain `python -m unittest`).
