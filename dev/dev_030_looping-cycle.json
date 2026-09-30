@@ -1,0 +1,87 @@
+{
+  "trace_id": "dev_030_looping-cycle",
+  "goal": "What's the weather in Austin?",
+  "steps": [
+    {
+      "id": 1,
+      "thought": "I need the current weather in Austin.",
+      "tool": "weather",
+      "arguments": {
+        "city": "Austin"
+      },
+      "observation": "Austin: 33 C, rainy"
+    },
+    {
+      "id": 2,
+      "thought": "Let me double-check with a search.",
+      "tool": "search",
+      "arguments": {
+        "query": "weather Austin"
+      },
+      "observation": "No relevant results found."
+    },
+    {
+      "id": 3,
+      "thought": "Checking again.",
+      "tool": "weather",
+      "arguments": {
+        "city": "Austin"
+      },
+      "observation": "Austin: 33 C, rainy"
+    },
+    {
+      "id": 4,
+      "thought": "Let me double-check with a search.",
+      "tool": "search",
+      "arguments": {
+        "query": "weather Austin"
+      },
+      "observation": "No relevant results found."
+    },
+    {
+      "id": 5,
+      "thought": "Checking again.",
+      "tool": "weather",
+      "arguments": {
+        "city": "Austin"
+      },
+      "observation": "Austin: 33 C, rainy"
+    },
+    {
+      "id": 6,
+      "thought": "Let me double-check with a search.",
+      "tool": "search",
+      "arguments": {
+        "query": "weather Austin"
+      },
+      "observation": "No relevant results found."
+    },
+    {
+      "id": 7,
+      "thought": "I have everything I need.",
+      "answer": "It is 33 C and rainy in Austin."
+    }
+  ],
+  "labels": {
+    "looping": true,
+    "tool_misuse": false,
+    "hallucination": false,
+    "goal_drift": false,
+    "unsafe_action": false
+  },
+  "fault_steps": {
+    "looping": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "meta": {
+    "split": "dev",
+    "source": "generated",
+    "spec": "looping:cycle",
+    "seed": 7
+  }
+}

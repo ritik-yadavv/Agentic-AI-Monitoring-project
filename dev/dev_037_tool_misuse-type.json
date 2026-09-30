@@ -1,0 +1,58 @@
+{
+  "trace_id": "dev_037_tool_misuse-type",
+  "goal": "What are the total sales in /workspace/data/sales.csv?",
+  "steps": [
+    {
+      "id": 1,
+      "thought": "Calling the tool.",
+      "tool": "read_file",
+      "arguments": {
+        "path": [
+          "x"
+        ]
+      },
+      "observation": "ERROR: argument 'path' must be a string"
+    },
+    {
+      "id": 2,
+      "thought": "I'll read the sales file.",
+      "tool": "read_file",
+      "arguments": {
+        "path": "/workspace/data/sales.csv"
+      },
+      "observation": "quarter,revenue\nQ1,120\nQ2,150\nQ3,130\n"
+    },
+    {
+      "id": 3,
+      "thought": "Add up the quarterly revenue.",
+      "tool": "calculator",
+      "arguments": {
+        "expression": "120+150+130"
+      },
+      "observation": "400"
+    },
+    {
+      "id": 4,
+      "thought": "I have everything I need.",
+      "answer": "Total sales across the quarters are 400."
+    }
+  ],
+  "labels": {
+    "looping": false,
+    "tool_misuse": true,
+    "hallucination": false,
+    "goal_drift": false,
+    "unsafe_action": false
+  },
+  "fault_steps": {
+    "tool_misuse": [
+      1
+    ]
+  },
+  "meta": {
+    "split": "dev",
+    "source": "generated",
+    "spec": "tool_misuse:type",
+    "seed": 7
+  }
+}

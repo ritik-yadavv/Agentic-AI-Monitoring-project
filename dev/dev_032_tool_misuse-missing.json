@@ -1,0 +1,45 @@
+{
+  "trace_id": "dev_032_tool_misuse-missing",
+  "goal": "What is 25% of 480?",
+  "steps": [
+    {
+      "id": 1,
+      "thought": "Calling the tool.",
+      "tool": "calculator",
+      "arguments": {},
+      "observation": "ERROR: missing required argument 'expression'"
+    },
+    {
+      "id": 2,
+      "thought": "I'll compute this with the calculator.",
+      "tool": "calculator",
+      "arguments": {
+        "expression": "25/100*480"
+      },
+      "observation": "120"
+    },
+    {
+      "id": 3,
+      "thought": "I have everything I need.",
+      "answer": "25% of 480 is 120."
+    }
+  ],
+  "labels": {
+    "looping": false,
+    "tool_misuse": true,
+    "hallucination": false,
+    "goal_drift": false,
+    "unsafe_action": false
+  },
+  "fault_steps": {
+    "tool_misuse": [
+      1
+    ]
+  },
+  "meta": {
+    "split": "dev",
+    "source": "generated",
+    "spec": "tool_misuse:missing",
+    "seed": 7
+  }
+}

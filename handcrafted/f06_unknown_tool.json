@@ -1,0 +1,47 @@
+{
+  "trace_id": "f06_unknown_tool",
+  "goal": "Weather in Lima?",
+  "steps": [
+    {
+      "id": 1,
+      "thought": "",
+      "tool": "weather_api",
+      "arguments": {
+        "city": "Lima"
+      },
+      "observation": "ERROR: unknown tool 'weather_api'"
+    },
+    {
+      "id": 2,
+      "thought": "Check weather in Lima.",
+      "tool": "weather",
+      "arguments": {
+        "city": "Lima"
+      },
+      "observation": "Lima: 19 C, clear"
+    },
+    {
+      "id": 3,
+      "thought": "",
+      "answer": "Lima is 19 C."
+    }
+  ],
+  "labels": {
+    "looping": false,
+    "tool_misuse": true,
+    "hallucination": false,
+    "goal_drift": false,
+    "unsafe_action": false
+  },
+  "fault_steps": {
+    "tool_misuse": [
+      1
+    ]
+  },
+  "meta": {
+    "split": "test",
+    "source": "handcrafted",
+    "difficulty": "normal",
+    "note": ""
+  }
+}

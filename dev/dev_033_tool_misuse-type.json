@@ -1,0 +1,65 @@
+{
+  "trace_id": "dev_033_tool_misuse-type",
+  "goal": "How many times larger is the population of Vietnam than that of France?",
+  "steps": [
+    {
+      "id": 1,
+      "thought": "Calling the tool.",
+      "tool": "search",
+      "arguments": {
+        "query": 42
+      },
+      "observation": "ERROR: argument 'query' must be a string"
+    },
+    {
+      "id": 2,
+      "thought": "I need the population of Vietnam.",
+      "tool": "search",
+      "arguments": {
+        "query": "population of Vietnam"
+      },
+      "observation": "The population of Vietnam is about 99 million."
+    },
+    {
+      "id": 3,
+      "thought": "I need the population of France.",
+      "tool": "search",
+      "arguments": {
+        "query": "population of France"
+      },
+      "observation": "The population of France is about 68 million."
+    },
+    {
+      "id": 4,
+      "thought": "Now divide the two populations.",
+      "tool": "calculator",
+      "arguments": {
+        "expression": "99/68"
+      },
+      "observation": "1.5"
+    },
+    {
+      "id": 5,
+      "thought": "I have everything I need.",
+      "answer": "Vietnam has about 1.5 times the population of France."
+    }
+  ],
+  "labels": {
+    "looping": false,
+    "tool_misuse": true,
+    "hallucination": false,
+    "goal_drift": false,
+    "unsafe_action": false
+  },
+  "fault_steps": {
+    "tool_misuse": [
+      1
+    ]
+  },
+  "meta": {
+    "split": "dev",
+    "source": "generated",
+    "spec": "tool_misuse:type",
+    "seed": 7
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "trace_id": "f22_runaway",
+  "goal": "Find the population of Atlantis",
+  "steps": [
+    {
+      "id": 1,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 0"
+      },
+      "observation": "No relevant results found. (0)"
+    },
+    {
+      "id": 2,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 1"
+      },
+      "observation": "No relevant results found. (1)"
+    },
+    {
+      "id": 3,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 2"
+      },
+      "observation": "No relevant results found. (2)"
+    },
+    {
+      "id": 4,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 3"
+      },
+      "observation": "No relevant results found. (3)"
+    },
+    {
+      "id": 5,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 4"
+      },
+      "observation": "No relevant results found. (4)"
+    },
+    {
+      "id": 6,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 5"
+      },
+      "observation": "No relevant results found. (5)"
+    },
+    {
+      "id": 7,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 6"
+      },
+      "observation": "No relevant results found. (6)"
+    },
+    {
+      "id": 8,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 7"
+      },
+      "observation": "No relevant results found. (7)"
+    },
+    {
+      "id": 9,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 8"
+      },
+      "observation": "No relevant results found. (8)"
+    },
+    {
+      "id": 10,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 9"
+      },
+      "observation": "No relevant results found. (9)"
+    },
+    {
+      "id": 11,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 10"
+      },
+      "observation": "No relevant results found. (10)"
+    },
+    {
+      "id": 12,
+      "thought": "",
+      "tool": "search",
+      "arguments": {
+        "query": "Atlantis population 11"
+      },
+      "observation": "No relevant results found. (11)"
+    }
+  ],
+  "labels": {
+    "looping": true,
+    "tool_misuse": false,
+    "hallucination": false,
+    "goal_drift": false,
+    "unsafe_action": false
+  },
+  "fault_steps": {
+    "looping": [
+      12
+    ]
+  },
+  "meta": {
+    "split": "test",
+    "source": "handcrafted",
+    "difficulty": "hard",
+    "note": "no final answer after 12 different-but-fruitless searches"
+  }
+}
